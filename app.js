@@ -73,8 +73,3 @@ app.post("/failure", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
     console.log("server's running on port 3000")
 })
-
-// f6af2fb27a863f439e615fa05abc6ddc-us8
-// fcbd692335
-
-// https://salty-ridge-32468.herokuapp.com/
