@@ -45,6 +45,7 @@ app.post("/", function(req, res) {
     }
 
     const request = https.request(url, options, function(response) {
+        // https.request returns a response which has field called statusCode.
         if (response.statusCode === 200) {
             res.sendFile(__dirname + "/success.html");
         } else {
@@ -75,3 +76,5 @@ app.listen(process.env.PORT || 3000, function() {
 
 // f6af2fb27a863f439e615fa05abc6ddc-us8
 // fcbd692335
+
+// https://salty-ridge-32468.herokuapp.com/
